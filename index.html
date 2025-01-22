@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de camisas da Magrin Store: nacionais, internacionais, retrô e muito mais!">
+    <title>Magrin Store Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <a class="no-underline">
+                <h1>Magrin Store Catálogo <img src="images/banner-image.png" alt="Banner"></h1>
+            </a>
+        </div>
+        <form id="searchForm" onsubmit="searchItems(event)">
+            <input type="text" placeholder="Busque produtos" id="searchInput">
+            <button type="submit">Buscar</button>
+            <!--<button type="button" id="favoritesButton" onclick="showFavorites()">Ver Favoritos</button> -->
+        </form>
+    </header>
+    
+        <!-- Adicionando uma fonte do Google (opcional) -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="loadProductsByCategory('camisas')">Camisas</a></li>
+            <li><a href="#" onclick="loadProductsByCategory('tenis')">Tênis</a></li>
+            <li><a href="#" onclick="loadProductsByCategory('jaquetas')">Jaquetas</a></li>
+            <li><a href="#" onclick="loadProductsByCategory('bone')">Boné</a></li>
+            <li><a href="#" onclick="loadProductsByCategory('outros itens')">Outros Itens</a></li>
+            <li><a href="#" onclick="loadProductsByCategory('pronta entrega')">Pronta Entrega</a></li>
+
+
+        </ul>
+    </nav>
+    
+
+    <main>
+        <section class="deals">
+            <h2 id="categoryTitle">Produtos</h2>
+            <p id="searchMessage" class="message"></p>
+            <div id="productGrid" class="grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Magrin Store</p>
+    </footer>
+
+    <!-- Modal de Favoritos -->
+    <div id="favoritesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFavorites()">&times;</span>
+            <h2>Favoritos</h2>
+            <div id="favoritesList" class="grid"></div>
+            <!-- Mensagem para finalizar compra no Instagram -->
+            <div class="finalize-purchase">
+                <p>Finalize sua compra pelo Instagram!</p>
+                <a href="https://www.instagram.com/magrin_store/" target="_blank">
+                    <img src="images/instagram-logo.png" alt="Instagram Logo" class="instagram-logo">
+                    <p>@Magrin_Store</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal para detalhes do produto -->
+<div id="detailsModal" class="modal">
+    <div id="detailsModalContent" class="modal-content">
+        <!-- Os detalhes do produto serão preenchidos dinamicamente -->
+    </div>
+</div>
+
+<div id="imageModal">
+    <span id="imageModalClose">&times;</span>
+    <img id="imageModalImg" src="" alt="Imagem expandida">
+</div>
+
+
+
+    <!-- Importação do Supabase via CDN -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.12.0/+esm"></script>
+    
+    <!-- Importação do seu script -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
