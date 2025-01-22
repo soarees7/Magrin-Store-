@@ -462,16 +462,23 @@ footer {
 
     /* Ajuste no botão de busca */
     #searchForm {
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
     }
 
     #searchInput {
-        width: 80%;
+        width: 70%;
     }
 
     button {
-        width: 100%;
-        padding: 10px;
+        width: 25%;
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+
+    #searchMessage {
+        color: #000000; /* Altere para a cor desejada */
+        text-align: center;
+        margin-top: 10px;
     }
 }

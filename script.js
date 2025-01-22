@@ -47,7 +47,7 @@ function displayProducts(products) {
     grid.innerHTML = "";
 
     if (products.length === 0) {
-        message.textContent = "Não encontrou o que procurava? contate-nos no instagram! @magrin_store";
+        message.textContent = "Não encontrou o que procurava? Contate-nos no instagram! @Magrin_Store";
         return;
     } else {
         message.textContent = "";
