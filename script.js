@@ -77,12 +77,14 @@ function searchItems(event) {
     const query = document.getElementById("searchInput").value.toLowerCase();
     fetchProducts().then(products => {
         const filteredProducts = products.filter(product =>
-            product.name.toLowerCase().includes(query) &&
-            product.category === currentCategory
+            product.name.toLowerCase().includes(query) // Busca apenas pelo nome do produto
         );
         displayProducts(filteredProducts);
+    }).catch(error => {
+        console.error('Erro ao buscar produtos:', error);
     });
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
     loadProductsByCategory("camisas");
