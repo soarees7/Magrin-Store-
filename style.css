@@ -438,11 +438,11 @@ footer {
     /* Ajuste da grid para mostrar os produtos */
     .grid {
         grid-template-columns: 4fr;  /* Exibe um produto por linha */
-        gap: 15px;
+        gap: 8px;
     }
     
     .jersey-item {
-        padding: 10px;
+        padding: 5px;
         text-align: center;
     }
 
