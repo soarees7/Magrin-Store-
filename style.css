@@ -101,14 +101,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white !important; /* Garantir que a cor do texto seja branca */
-    text-decoration: none !important; /* Remove o sublinhado */
+    color: white !important;
+    text-decoration: none !important;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #7c94ff; /* Cor quando o link é hover */
+    color: #7c94ff;
 }
 
 /* Main Content */
@@ -191,19 +191,18 @@ main {
     cursor: pointer;
 }
 
-
 /* Modal de Detalhes */
 .modal {
-    display: none; /* Inicialmente invisível */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Garantir que o modal fique acima de outros elementos */
+    z-index: 1000;
 }
 
 .modal-content {
@@ -212,7 +211,7 @@ main {
     border-radius: 8px;
     max-width: 600px;
     width: 100%;
-    overflow-y: auto; /* Para permitir rolagem se as imagens ou conteúdo forem muitos */
+    overflow-y: auto;
     z-index: 1001;
 }
 
@@ -225,22 +224,20 @@ main {
 /* Centralizar o link e a imagem do Instagram */
 #detailsModalContent .instagram-logo {
     display: block;
-    margin: 20px auto; /* Centraliza horizontalmente */
-    width: 40px; /* Tamanho desejado da imagem */
-    height: 40px; /* Tamanho desejado da imagem */
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s;
 }
 
 #detailsModalContent .instagram-logo:hover {
-    transform: scale(1.1); /* Efeito ao passar o mouse */
+    transform: scale(1.1);
 }
 
 #detailsModalContent a {
-    display: block;  /* Garante que o link se comporte como bloco */
-    text-align: center;  /* Centraliza o link */
+    display: block;
+    text-align: center;
 }
-
-
 
 /* Ajuste para a lista de favoritos no modal */
 #favoritesList {
@@ -256,7 +253,7 @@ main {
     padding: 15px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
-    margin-bottom: 15px; /* Margem para separar os itens */
+    margin-bottom: 15px;
 }
 
 .jersey-item img {
@@ -437,7 +434,7 @@ footer {
 
     /* Ajuste da grid para mostrar os produtos */
     .grid {
-        grid-template-columns: 4fr;  /* Exibe um produto por linha */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Exibe múltiplos produtos por linha */
         gap: 8px;
     }
     
@@ -472,7 +469,7 @@ footer {
     }
 
     #searchInput {
-        width: 80%;  /* Ocupa a maior parte da tela */
+        width: 80%;
     }
 
     button {
