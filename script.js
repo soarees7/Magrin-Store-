@@ -47,7 +47,7 @@ function displayProducts(products) {
     grid.innerHTML = "";
 
     if (products.length === 0) {
-        message.textContent = "Nenhum produto encontrado.";
+        message.textContent = "Não encontrou o que procurava? contate-nos no instagram! @magrin_store";
         return;
     } else {
         message.textContent = "";
@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // *************************************************************************************
 // *************************************************************************************
 // *************************************************************************************
-
 // *************************************************************************************
 
 async function showProductDetails(productId) {
@@ -130,7 +129,6 @@ async function showProductDetails(productId) {
         `;
     }
 
-    // Adicionando a mensagem com o link para o Instagram
     const instagramMessageHTML = `
         <p><strong>Caso se interesse no produto, você pode fazer a compra pelo Instagram!</strong></p>
         <a href="https://www.instagram.com/magrin_store/" target="_blank">
@@ -148,7 +146,6 @@ async function showProductDetails(productId) {
         <button onclick="closeProductDetails()">Fechar</button>
     `;
 
-    // Exibe o modal com os detalhes do produto
     modal.style.display = "flex"; 
     console.log("Modal foi exibido, display:", modal.style.display); // Verificação do display
 }
