@@ -70,8 +70,11 @@ button:hover {
 
 /* Botões de produtos */
 .product-button {
-    padding: 4px 8px;
-    font-size: 0.85em;
+    width: 80%; /* Faz o botão ocupar toda a largura disponível */
+    padding: 12px; /* Aumenta o padding para que o botão fique retangular */
+    font-size: 1em; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    /*padding: 4px 8px;
+    font-size: 0.85em; */
     border-radius: 4px;
     background-color: #0056b3;
     color: white;
