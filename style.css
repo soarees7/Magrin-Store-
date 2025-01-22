@@ -437,7 +437,7 @@ footer {
 
     /* Ajuste da grid para mostrar os produtos */
     .grid {
-        grid-template-columns: 1fr;  /* Exibe um produto por linha */
+        grid-template-columns: 4fr;  /* Exibe um produto por linha */
         gap: 15px;
     }
     
