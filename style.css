@@ -443,8 +443,8 @@ footer {
 
     /* Ajuste da grid para mostrar os produtos */
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Exibe múltiplos produtos por linha */
-        gap: 8px;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* Exibe múltiplos produtos por linha */
+        gap: 6px;
     }
     
     .jersey-item {
