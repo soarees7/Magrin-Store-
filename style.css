@@ -443,17 +443,17 @@ footer {
 
     /* Ajuste da grid para mostrar os produtos */
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Exibe múltiplos produtos por linha */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Exibe múltiplos produtos por linha */
         gap: 8px;
     }
     
     .jersey-item {
-        padding: 5px;
+        padding: 2px;
         text-align: center;
     }
 
     .jersey-item img {
-        width: 80px;
+        width: 150px;
         height: auto;
     }
 

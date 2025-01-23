@@ -63,8 +63,6 @@ function displayProducts(products) {
             <div class="jersey-item">
                 <img src="${product.images.length > 0 ? product.images[0] : product.image}" alt="${product.name}" onclick="expandImage('${product.images.length > 0 ? product.images[0] : product.image}')">
                 <p><strong>${product.name}</strong></p>
-                <p><strong> ${product.price}</strong></p>
-                
                 <button class="product-button" onclick="showProductDetails('${product.id}')">Ver Detalhes</button>
             </div>
         `;
