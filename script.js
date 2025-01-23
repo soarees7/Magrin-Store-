@@ -57,13 +57,14 @@ function displayProducts(products) {
         message.textContent = "";
     }
 
+    //<p><strong>Tamanho:</strong> ${product.size}</p>
     products.forEach((product) => {
         const productItem = `
             <div class="jersey-item">
                 <img src="${product.images.length > 0 ? product.images[0] : product.image}" alt="${product.name}" onclick="expandImage('${product.images.length > 0 ? product.images[0] : product.image}')">
                 <p><strong>Nome:</strong> ${product.name}</p>
                 <p><strong>Preço:</strong> ${product.price}</p>
-                <p><strong>Tamanho:</strong> ${product.size}</p>
+                
                 <button class="product-button" onclick="showProductDetails('${product.id}')">Ver Detalhes</button>
             </div>
         `;
