@@ -134,7 +134,7 @@ main {
 /* Grid Styles */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -404,6 +404,14 @@ footer {
 #detailsModalContent button:hover {
     background-color: #003f7f;
 }
+
+#searchMessage {
+    color: #000000; /* Altere para a cor desejada */
+    text-align: center;
+    margin-top: 10px;
+}
+
+
 
 /* Mobile Adjustments */
 @media only screen and (max-width: 768px) {

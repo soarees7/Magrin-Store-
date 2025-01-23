@@ -37,9 +37,13 @@ async function fetchProducts() {
 async function loadProductsByCategory(category) {
     currentCategory = category;
     const products = await fetchProducts();
-    const filteredProducts = products.filter(product => product.category === category);
+    const filteredProducts = products
+        .filter(product => product.category === category)
+        .sort((a, b) => a.name.localeCompare(b.name)); // Ordena por ordem alfabética
+
     displayProducts(filteredProducts);
 }
+
 
 function displayProducts(products) {
     const grid = document.getElementById("productGrid");
