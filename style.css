@@ -453,8 +453,9 @@ footer {
     }
 
     .jersey-item img {
-        width: 110px;
+        width: 10px;
         height: auto;
+        margin: 5px;  /* Adiciona um espaço de 5px fora da imagem */
     }
 
     /* Ajustes no modal */
