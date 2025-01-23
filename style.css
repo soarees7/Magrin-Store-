@@ -443,7 +443,7 @@ footer {
 
     /* Ajuste da grid para mostrar os produtos */
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Exibe múltiplos produtos por linha */
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Exibe múltiplos produtos por linha */
         gap: 8px;
     }
     
@@ -453,7 +453,7 @@ footer {
     }
 
     .jersey-item img {
-        width: 150px;
+        width: 120px;
         height: auto;
     }
 
