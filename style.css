@@ -444,9 +444,9 @@ footer {
 /* Ajuste da grid para mostrar os produtos */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Exibe múltiplos produtos por linha */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Exibe múltiplos produtos por linha */
     gap: 16px; /* Aumenta o gap para mais espaçamento entre os itens */
-    max-width: 200px; /* Ajustei a largura máxima da grid para garantir que caibam mais itens */
+    max-width: 150px; /* Ajustei a largura máxima da grid para garantir que caibam mais itens */
     margin: 0 auto; /* Centraliza a grid na página */
     padding: 20px; /* Adiciona espaço ao redor da grid */
 }
@@ -554,7 +554,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #003f7f;
 }
 
 #searchMessage {
