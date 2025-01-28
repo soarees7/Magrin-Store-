@@ -444,15 +444,16 @@ footer {
 /* Ajuste da grid para mostrar os produtos */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Exibe múltiplos produtos por linha */
-    gap: 16px; /* Aumentei o gap para mais espaçamento entre os itens */
-    max-width: 150px; /* Limita a largura máxima da grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Exibe múltiplos produtos por linha */
+    gap: 16px; /* Aumenta o gap para mais espaçamento entre os itens */
+    max-width: 1200px; /* Ajustei a largura máxima da grid para garantir que caibam mais itens */
     margin: 0 auto; /* Centraliza a grid na página */
     padding: 20px; /* Adiciona espaço ao redor da grid */
 }
 
+/* Ajustes nos itens da grid */
 .jersey-item {
-    padding: 15px; /* Aumentei o padding para mais espaço interno */
+    padding: 15px; /* Aumenta o padding para mais espaço interno */
     text-align: center;
     border: 1px solid #ddd; /* Adiciona uma borda sutil */
     border-radius: 10px; /* Bordas arredondadas */
@@ -465,36 +466,48 @@ footer {
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adiciona transição suave */
 }
 
+/* Efeito de hover nos itens */
 .jersey-item:hover {
     transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
     box-shadow: 0 4px 10px #00000033; /* Sombra mais pronunciada ao passar o mouse */
 }
 
+/* Centralizar a imagem */
 .jersey-item img {
-    width: 110px; /* Aumentei o tamanho da imagem */
+    width: 110px; /* Aumenta o tamanho da imagem */
     height: auto;
     margin-bottom: 15px; /* Espaço abaixo da imagem */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centraliza horizontalmente */
 }
 
+/* Estilo do título */
 .jersey-item h3 {
-    font-size: 1.2em; /* Aumentei o tamanho da fonte do título */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do título */
     margin: 10px 0; /* Espaçamento ao redor do título */
 }
 
+/* Estilo da descrição ou preço */
 .jersey-item p {
     font-size: 1em; /* Tamanho da fonte do preço ou descrição */
     margin: 5px 0; /* Espaçamento ao redor do texto */
 }
 
+/* Estilo do botão */
 .product-button {
-    font-size: 1em; /* Aumentei o tamanho da fonte do botão */
-    padding: 10px 15px; /* Aumentei o padding do botão */
+    font-size: 1em; /* Aumenta o tamanho da fonte do botão */
+    padding: 10px 15px; /* Aumenta o padding do botão */
     background-color: #007bff; /* Cor de fundo azul */
     color: white; /* Texto branco */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    margin-top: 10px; /* Espaçamento acima do botão */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o botão */
 }
 
 .product-button:hover {
@@ -509,15 +522,11 @@ footer {
     background-color: #fff; /* Garante que o fundo seja branco */
 }
 
-.finalize-purchase {
-    font-size: 1em; /* Aumentei o tamanho da fonte */
-}
-
 /* Ajuste no botão de busca */
 #searchForm {
     display: flex;
     flex-direction: row;
-    gap: 10px; /* Aumentei o gap para mais espaçamento */
+    gap: 10px; /* Aumenta o gap para mais espaçamento */
     align-items: center; /* Alinha os itens verticalmente */
     max-width: 600px; /* Limita a largura do formulário */
     margin: 0 auto; /* Centraliza o formulário */
@@ -529,13 +538,13 @@ footer {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1em; /* Aumentei o tamanho da fonte */
+    font-size: 1em; /* Aumenta o tamanho da fonte */
 }
 
 button {
     width: 25%;
     padding: 10px;
-    font-size: 1em; /* Aumentei o tamanho da fonte */
+    font-size: 1em; /* Aumenta o tamanho da fonte */
     border: none;
     border-radius: 5px;
     background-color: #007bff;
