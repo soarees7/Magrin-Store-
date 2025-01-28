@@ -441,55 +441,72 @@ footer {
         transition: color 0.3s;
     }
 
-    /* Ajuste da grid para mostrar os produtos */
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Exibe múltiplos produtos por linha */
-        gap: 8px;
-    }
-    
-    .jersey-item {
-        padding: 15px;
-        text-align: center;
-    }
+/* Ajuste da grid para mostrar os produtos */
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Exibe múltiplos produtos por linha */
+    gap: 8px;
+}
 
-    .jersey-item img {
-        width: 100px;
-        height: auto;
-    }
+.jersey-item {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos de forma vertical */
+    justify-content: space-between; /* Garante que o botão fique no final */
+    min-height: 200px; /* Ajuste a altura mínima para garantir que o botão fique na parte inferior */
+}
 
-    /* Ajustes no modal */
-    .modal-content {
-        padding: 15px;
-    }
-    
-    .finalize-purchase {
-        font-size: 0.9em;
-    }
+.jersey-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o conteúdo abaixo */
+}
 
-    .product-button {
-        font-size: 0.9em;
-        padding: 8px 12px;
-    }
+/* Estilo do botão */
+.product-button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: auto; /* Isso faz com que o botão vá para o final do item */
+}
 
-    /* Ajuste no botão de busca */
-    #searchForm {
-        flex-direction: row;
-        gap: 5px;
-    }
+.product-button:hover {
+    background-color: #0056b3;
+}
 
-    #searchInput {
-        width: 70%;
-    }
+/* Ajustes no modal */
+.modal-content {
+    padding: 15px;
+}
 
-    button {
-        width: 25%;
-        padding: 8px 10px;
-        font-size: 0.9em;
-    }
+.finalize-purchase {
+    font-size: 0.9em;
+}
 
-    #searchMessage {
-        color: #000000; /* Altere para a cor desejada */
-        text-align: center;
-        margin-top: 10px;
-    }
+/* Ajuste no botão de busca */
+#searchForm {
+    flex-direction: row;
+    gap: 5px;
+}
+
+#searchInput {
+    width: 70%;
+}
+
+button {
+    width: 25%;
+    padding: 8px 10px;
+    font-size: 0.9em;
+}
+
+#searchMessage {
+    color: #000000; /* Altere para a cor desejada */
+    text-align: center;
+    margin-top: 10px;
+}
 }
