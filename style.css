@@ -445,10 +445,13 @@ footer {
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Exibe múltiplos produtos por linha */
         gap: 8px;
+        max-width: 150px; /* Ajustei a largura máxima da grid para garantir que caibam mais itens */
+        margin: 0 auto; /* Centraliza a grid na página */
+        justify-content: center;
     }
     
     .jersey-item {
-        padding: 2px;
+        padding: 15px;
         text-align: center;
     }
 
