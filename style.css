@@ -446,7 +446,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Exibe múltiplos produtos por linha */
     gap: 16px; /* Aumentei o gap para mais espaçamento entre os itens */
-    max-width: 1200px; /* Limita a largura máxima da grid */
+    max-width: 200px; /* Limita a largura máxima da grid */
     margin: 0 auto; /* Centraliza a grid na página */
     padding: 20px; /* Adiciona espaço ao redor da grid */
 }
@@ -458,7 +458,7 @@ footer {
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     background-color: #fff; /* Fundo branco para o item */
-    min-height: 300px; /* Altura mínima para garantir consistência */
+    min-height: 150px; /* Altura mínima para garantir consistência */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribui o conteúdo verticalmente */
@@ -467,11 +467,11 @@ footer {
 
 .jersey-item:hover {
     transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao passar o mouse */
+    box-shadow: 0 4px 10px #00000033; /* Sombra mais pronunciada ao passar o mouse */
 }
 
 .jersey-item img {
-    width: 150px; /* Aumentei o tamanho da imagem */
+    width: 100px; /* Aumentei o tamanho da imagem */
     height: auto;
     margin-bottom: 15px; /* Espaço abaixo da imagem */
 }
