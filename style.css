@@ -446,7 +446,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Exibe múltiplos produtos por linha */
     gap: 16px; /* Aumenta o gap para mais espaçamento entre os itens */
-    max-width: 1200px; /* Ajustei a largura máxima da grid para garantir que caibam mais itens */
+    max-width: 200px; /* Ajustei a largura máxima da grid para garantir que caibam mais itens */
     margin: 0 auto; /* Centraliza a grid na página */
     padding: 20px; /* Adiciona espaço ao redor da grid */
 }
