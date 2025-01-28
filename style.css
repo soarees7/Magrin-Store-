@@ -446,7 +446,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Exibe múltiplos produtos por linha */
     gap: 16px; /* Aumentei o gap para mais espaçamento entre os itens */
-    max-width: 200px; /* Limita a largura máxima da grid */
+    max-width: 150px; /* Limita a largura máxima da grid */
     margin: 0 auto; /* Centraliza a grid na página */
     padding: 20px; /* Adiciona espaço ao redor da grid */
 }
@@ -471,7 +471,7 @@ footer {
 }
 
 .jersey-item img {
-    width: 100px; /* Aumentei o tamanho da imagem */
+    width: 110px; /* Aumentei o tamanho da imagem */
     height: auto;
     margin-bottom: 15px; /* Espaço abaixo da imagem */
 }
